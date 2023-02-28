@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap');
+:root{
+	--darkblue: #032b56;
+	--lightblue: #4291FD;
+	--secondary-color: #fee023;
+}
+body{	   
+	   font-family: 'Fira Sans', sans-serif;
+}
+
+nav{
+	height: 80px;
+}
+.padding{
+	padding-top: 80px;
+}
+section,footer{
+	
+	height: 100%;
+}
+
+
+.btn-primary{
+	background-color: var(--lightblue)!important;
+	border: none;
+}
+.btn-primary:hover{
+	background-color: var(--darkblue) !important;
+	transition: background-color .5s;
+}
+/*nav style */
+.nav-padding{
+	padding: 0 20px;
+
+}
+.nav-link{
+	color: var(--darkblue)!important ;
+	font-weight: 500;
+}
+a.active{
+	color: var(--lightblue)  !important;
+	
+}
+li.active{
+	border-bottom: 2px solid var(--lightblue);
+}
+.rounded{
+	border-radius: 15px;
+}
+.nav-item{
+	background-color: var(--bs-light);
+}
+@media(max-width: 992px){
+	#tobehiddenbutton {
+		display: none;
+	}
+	#toshowbutton {
+		display: inline-block !important;
+	}
+
+}
+.bi-arrow-right{
+	font-weight: 600;
+}
+/*main section */
+#main{
+	background-color: var(--darkblue);
+	color: #fff;
+}
+.description{
+	position: absolute;
+	/*top: 50%;*/
+	top: calc(50% - 80px);
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+#main-image{
+	width: 100%;
+	height: calc(100vh - 80px);
+	object-fit: cover;
+	opacity: 0.4;
+}
+.description>h1{
+	font-weight: 500;
+	font-family: "Fira Sans",'sans-serif';
+}
+#servicesbtn,#signupbtn{
+	/*margin: 0 10px;*/
+	width: 175px;
+	font-weight: 500;
+
+	padding: 10px;
+	border: 0;
+}
+.fa-angle-double-down{
+	width: 15px;
+}
+#servicesbtn{
+	background-color: var(--bs-light) !important;
+	color: var(--darkblue);
+}
+#signupbtn{
+	background-color: var(--secondary-color) !important;
+	color: var(--darkblue);
+}
+
+/* second section */
+#second-section{
+	background-color: #EFF6FF;
+}
+hr{
+	margin-bottom: 32px;
+
+}
+.section-title
+{
+	font-weight: 600;
+	text-align: center;
+
+}
+#student-list>dt>i{
+	margin-right:  10px;
+}
+#student-list>dt{
+	margin-bottom:  8px;
+	font-size: 1.5rem;
+}
+#student-list> dd{
+	margin-bottom:  24px;
+	color: #555;
+}
+.fa-check-circle ,.fa-chevron-circle-right{
+	color: var(--darkblue);
+	font-size: 25px;
+}
+/*third-section*/
+#carousel2,#carousel2-md,#carousel2-sm{
+	height: 375px;
+	width: auto;
+	
+
+}
+
+.card-img-top{
+	
+	height: 375px;
+
+	
+}
+.card-title{
+	position: absolute;
+	left: 15px;
+	top: 15px;
+	color: white;
+}
+.carousel-control-next-icon{
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: translate(50%,-50%);
+	background-color: black;
+	border-radius: 50%;
+	color: #fff;
+	width: 25px;
+	height: 25px;
+
+
+}
+.carousel-control-prev-icon{
+	position: absolute;
+	top: 50%;
+	left: 20px;
+	transform: translate(-50%,-50%);
+	background-color: black;
+	border-radius: 50%;
+	color: #fff;
+	width: 25px;
+	height: 25px;
+
+}
+/*fourth-section*/
+#fourth-section{
+	background-color: #EFF6FF;
+
+	/*color: #fff;*/
+}
+.fas{
+	margin-right: 10px;
+}
+.fa-connectdevelop{
+	font-weight: bold;
+	margin-right: 10px;
+}
+/*FAQ*/
+#faq-title{
+	font-weight: 600;
+	
+}
+.accordion-button{
+	background-color: #f4f4f4;
+	color: var(--darkblue);
+	font-size: 1.2rem !important;
+}
+.accordion-button:not(.collapsed){
+	background-color: var(--darkblue);
+	color: #fff;
+}
+.accordion-body{
+	font-size: 1rem !important;
+	
+	margin:  10px auto;
+}
+/*footer*/
+footer{
+	background-color: var(--darkblue);
+	color: #fff;
+	font-weight: 300;
+}
+footer a {
+ 	text-decoration: none;
+ 	color:#fff;
+ 	padding: 5px;
+}
+footer a:hover{
+ 	color:var(--secondary-color);
+ 	text-decoration: underline;
+}
+footer h2{
+
+}
+.footer-list{
+	
+	list-style: none;
+	padding-left: 0;
+}
+.footer-list>li{
+	margin-right: 10px;
+
+}
+.icon{
+	width: 30px;
+	height: 30px;
+	background-color: var(--secondary-color);
+	border-radius: 50%;
+	padding: 8px;
+	text-align: center;
+	color:#01244a ;
+	font-weight: 500;
+	
+}
+.phone-number{
+	color: var(--secondary-color);
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+iframe{
+	width: 100%;
+	height: 50;
+}
+.intro{
+	font-size: 1.25rem;
+	font-weight: 600;
+}
+.registerformactive {
+	width: 50%;
+	height: 100%;
+	padding: 1rem;
+	margin: 1px;
+	border-radius: inherit;
+	background-color: inherit;
+	border: 0;
+	padding: 1rem;
+	
+}
+.registerformdisabled {
+	width: 50%;
+	height: 100%;
+	padding: 1rem;
+	margin: 1px;
+	border-radius: inherit;
+	background-color: #e5e6f7;
+	border: 0;
+	padding: 1rem;
+	border-bottom: 1px solid #dee2e6;
+	
+}
+.modal-header{
+	padding: 0;
+	margin: 0;
+	border-bottom: 0;
+	border: ;
+}
+#loginform{
+	display: none;
+}
+#registerform{
+	display: block;
+}
